@@ -20,10 +20,14 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var onTapped: UIButton!
     
     @IBAction func onTappedbutton(_ sender: Any) {
-        let vc = TransformTableViewController()
-        vc.hero = hero
-        vc.transformations = transformations
-        self.navigationController?.pushViewController(vc, animated: true)
+       
+        if let navigationController = self.navigationController {
+            let vc = TransformTableViewController()
+            vc.hero = hero
+            vc.transformations = transformations
+            navigationController.pushViewController(vc, animated: true)
+            
+        }
     }
     
     override func viewDidLoad() {
@@ -50,6 +54,8 @@ class InfoViewController: UIViewController {
         model.getTransformation(for: hero) { [weak self] result in
             switch result {
             case .success(let transformations):
+                let sortedTransformations = transformations.sorted { $0.name < $1.name }
+                self?.transformations = sortedTransformations
                 if transformations.isEmpty {
                     DispatchQueue.main.async {
                         self?.onTapped.isHidden = true
