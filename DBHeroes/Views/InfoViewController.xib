@@ -81,6 +81,9 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="TRANSFORMACIONES"/>
+                    <connections>
+                        <action selector="onTappedbutton:" destination="-1" eventType="touchUpInside" id="TEK-g3-EUc"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

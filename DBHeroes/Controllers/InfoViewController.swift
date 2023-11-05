@@ -17,8 +17,14 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var uiFoto: UIImageView!
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblDescripcion: UITextView!
-    
     @IBOutlet weak var onTapped: UIButton!
+    
+    @IBAction func onTappedbutton(_ sender: Any) {
+        let vc = TransformTableViewController()
+        vc.hero = hero
+        vc.transformations = transformations
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
