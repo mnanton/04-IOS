@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="lblDescripcion" destination="aks-a7-cgh" id="BWt-3F-0rf"/>
                 <outlet property="lblNombre" destination="G9H-Ej-7Rl" id="r1q-gS-yle"/>
+                <outlet property="onTapped" destination="8RF-xK-7jr" id="g4R-It-o9h"/>
                 <outlet property="titleNavigation" destination="LDS-F8-7AY" id="reb-2C-kXk"/>
                 <outlet property="uiFoto" destination="sax-iy-wjO" id="WAZ-y9-nVY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,19 +26,27 @@
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDS-F8-7AY">
                     <rect key="frame" x="0.0" y="67" width="393" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <textAttributes key="largeTitleTextAttributes">
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
                 </navigationBar>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sax-iy-wjO">
-                    <rect key="frame" x="0.0" y="0.0" width="394" height="287.66666666666669"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="287.66666666666669"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="287.67000000000002" id="c1B-iI-fA2"/>
                         <constraint firstAttribute="width" secondItem="sax-iy-wjO" secondAttribute="height" multiplier="393:287" id="cnm-B1-hsX"/>
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4yc-tQ-Fmd" userLabel="Stack View General">
-                    <rect key="frame" x="8" y="295.66666666666669" width="378" height="245.00000000000006"/>
+                    <rect key="frame" x="8" y="295.66666666666669" width="377" height="244.33333333333331"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Personaje" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9H-Ej-7Rl" userLabel="LBLnombre">
-                            <rect key="frame" x="0.0" y="0.0" width="378" height="28"/>
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="XhM-Yf-jAj"/>
                                 <constraint firstAttribute="width" secondItem="G9H-Ej-7Rl" secondAttribute="height" multiplier="27:2" id="kni-Ln-gQs"/>
@@ -48,7 +57,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aks-a7-cgh" userLabel="LBLdescripcion">
-                            <rect key="frame" x="0.0" y="32" width="378" height="213"/>
+                            <rect key="frame" x="0.0" y="32.000000000000014" width="377" height="212.33333333333337"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="aks-a7-cgh" secondAttribute="height" multiplier="126:71" id="p2p-g5-CMt"/>
@@ -64,7 +73,7 @@
                     </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RF-xK-7jr" userLabel="onTappedTrans">
-                    <rect key="frame" x="8" y="763.66666666666663" width="378" height="46.333333333333371"/>
+                    <rect key="frame" x="8" y="763.66666666666663" width="377" height="46.333333333333371"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Zn2-HX-ajd"/>
                         <constraint firstAttribute="height" constant="46.333335876464844" id="h1t-dm-KVa"/>
@@ -95,6 +104,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
