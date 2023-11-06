@@ -11,35 +11,35 @@ class TransformViewController: UIViewController {
     var hero: Hero?
     private var transformation: Transformation?
     var transformations: [Transformation] = []
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        //tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cellheroes")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-
-           if let navigationController = self.navigationController {
-               navigationController.navigationBar.tintColor = UIColor.blue
-           }
+        super.viewWillAppear(animated)
+        
+        if let navigationController = self.navigationController {
+            navigationController.navigationBar.tintColor = UIColor.blue
+        }
     }}
 
 // MARK - TableView DataSource
 extension TransformViewController: UITableViewDataSource {
-        
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transformations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // Cargamos los datos a nuestra celda customizada
+        // Cargamos los datos a nuestra celda customizada, aprovechando la de Heroes creada anteriormente
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellheroes", for: indexPath) as? ListTableViewCell
         cell?.accessoryType = .disclosureIndicator
         

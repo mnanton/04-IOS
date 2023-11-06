@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class InfoViewController: UIViewController {
     var hero: Hero?
     private var transformation: Transformation?
@@ -40,13 +39,15 @@ class InfoViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-
-           if let navigationController = self.navigationController {
-               navigationController.navigationBar.tintColor = UIColor.white
-           }
+        super.viewWillAppear(animated)
+        
+        // Cambiamos el mensaje del navegador a blanco, para que destaque sobre la foto
+        if let navigationController = self.navigationController {
+            navigationController.navigationBar.tintColor = UIColor.white
+        }
     }
     
+    // Con esta función averiguamos si el Heroe tiene transformacionens y ocultamos el botón si no tiene
     func transformAvailable(for hero: Hero) {
         guard let token = LocalDataModel.getToken() else { return}
         
