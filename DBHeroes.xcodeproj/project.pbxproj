@@ -28,6 +28,9 @@
 		45DA0BF62AC9ECAD00B7882A /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45DA0BF42AC9ECAD00B7882A /* ListTableViewCell.xib */; };
 		45DA0BF92AC9F57F00B7882A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DA0BF72AC9F57F00B7882A /* InfoViewController.swift */; };
 		45DA0BFA2AC9F57F00B7882A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45DA0BF82AC9F57F00B7882A /* InfoViewController.xib */; };
+		45FD25832AF92A0B005F457D /* TransInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD25812AF92A0B005F457D /* TransInfoViewController.swift */; };
+		45FD25842AF92A0B005F457D /* TransInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45FD25822AF92A0B005F457D /* TransInfoViewController.xib */; };
+		45FD25862AF932D4005F457D /* LocalDataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD25852AF932D4005F457D /* LocalDataModelTest.swift */; };
 		45FD7FB12AC44D5600D1CFBC /* HeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD7FB02AC44D5600D1CFBC /* HeroList.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		45DA0BF42AC9ECAD00B7882A /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		45DA0BF72AC9F57F00B7882A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		45DA0BF82AC9F57F00B7882A /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		45FD25812AF92A0B005F457D /* TransInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransInfoViewController.swift; sourceTree = "<group>"; };
+		45FD25822AF92A0B005F457D /* TransInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransInfoViewController.xib; sourceTree = "<group>"; };
+		45FD25852AF932D4005F457D /* LocalDataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModelTest.swift; sourceTree = "<group>"; };
 		45FD7FB02AC44D5600D1CFBC /* HeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +134,7 @@
 				45DA0BF42AC9ECAD00B7882A /* ListTableViewCell.xib */,
 				45DA0BF82AC9F57F00B7882A /* InfoViewController.xib */,
 				45C4AE8A2AF9145B005F482B /* TransformViewController.xib */,
+				45FD25822AF92A0B005F457D /* TransInfoViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 				45DA0BF32AC9ECAD00B7882A /* ListTableViewCell.swift */,
 				45DA0BF72AC9F57F00B7882A /* InfoViewController.swift */,
 				45C4AE892AF9145B005F482B /* TransformViewController.swift */,
+				45FD25812AF92A0B005F457D /* TransInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			children = (
 				45CBA64A2AC73FCC00D931D8 /* DBHeroesTests.swift */,
 				45CBA6512AC7407700D931D8 /* NetWorkModelTest.swift */,
+				45FD25852AF932D4005F457D /* LocalDataModelTest.swift */,
 			);
 			path = DBHeroesTests;
 			sourceTree = "<group>";
@@ -254,6 +263,7 @@
 				45C4AE8C2AF9145B005F482B /* TransformViewController.xib in Resources */,
 				45C7D0932AC2F729000CA80D /* Assets.xcassets in Resources */,
 				45DA0BFA2AC9F57F00B7882A /* InfoViewController.xib in Resources */,
+				45FD25842AF92A0B005F457D /* TransInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +292,7 @@
 				45A93BDB2AC9E37F00A054CC /* UrlToImage.swift in Sources */,
 				45DA0BF92AC9F57F00B7882A /* InfoViewController.swift in Sources */,
 				45C7D08A2AC2F728000CA80D /* AppDelegate.swift in Sources */,
+				45FD25832AF92A0B005F457D /* TransInfoViewController.swift in Sources */,
 				45FD7FB12AC44D5600D1CFBC /* HeroList.swift in Sources */,
 				45C7D08C2AC2F728000CA80D /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +304,7 @@
 			files = (
 				45CBA6522AC7407700D931D8 /* NetWorkModelTest.swift in Sources */,
 				45CBA64B2AC73FCC00D931D8 /* DBHeroesTests.swift in Sources */,
+				45FD25862AF932D4005F457D /* LocalDataModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

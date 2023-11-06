@@ -55,9 +55,9 @@ extension TransformViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)  {
         // Obtenemos datos de la celda actual, y los pasamos a la siguiente vista
         if let cell = tableView.cellForRow(at: indexPath) as? ListTableViewCell {
-            //let vc = InfoViewController()
-            //vc.hero = listHeroes[indexPath.row]
-            //self.navigationController?.pushViewController(vc, animated: true)
+            let vc = TransInfoViewController()
+            vc.transformation = transformations[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
