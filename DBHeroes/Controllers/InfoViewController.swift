@@ -22,7 +22,7 @@ class InfoViewController: UIViewController {
     @IBAction func onTappedbutton(_ sender: Any) {
        
         if let navigationController = self.navigationController {
-            let vc = TransformTableViewController()
+            let vc = TransformViewController()
             vc.hero = hero
             vc.transformations = transformations
             navigationController.pushViewController(vc, animated: true)

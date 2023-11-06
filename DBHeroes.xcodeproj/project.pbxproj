@@ -10,11 +10,11 @@
 		45124FCD2AC59A4400489A87 /* HeroTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45124FCC2AC59A4400489A87 /* HeroTransformation.swift */; };
 		45124FCF2AC5DBB300489A87 /* GetTransformationBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45124FCE2AC5DBB300489A87 /* GetTransformationBody.swift */; };
 		45124FD12AC61B7200489A87 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45124FD02AC61B7200489A87 /* LocalDataModel.swift */; };
-		4545F0352AF7A8510080A012 /* TransformTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545F0332AF7A8510080A012 /* TransformTableViewController.swift */; };
-		4545F0362AF7A8510080A012 /* TransformTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545F0342AF7A8510080A012 /* TransformTableViewController.xib */; };
 		45A93BD22AC96BB800A054CC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A93BD02AC96BB800A054CC /* ListTableViewController.swift */; };
 		45A93BD32AC96BB800A054CC /* ListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A93BD12AC96BB800A054CC /* ListTableViewController.xib */; };
 		45A93BDB2AC9E37F00A054CC /* UrlToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A93BDA2AC9E37F00A054CC /* UrlToImage.swift */; };
+		45C4AE8B2AF9145B005F482B /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AE892AF9145B005F482B /* TransformViewController.swift */; };
+		45C4AE8C2AF9145B005F482B /* TransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C4AE8A2AF9145B005F482B /* TransformViewController.xib */; };
 		45C7D08A2AC2F728000CA80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7D0892AC2F728000CA80D /* AppDelegate.swift */; };
 		45C7D08C2AC2F728000CA80D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7D08B2AC2F728000CA80D /* SceneDelegate.swift */; };
 		45C7D0932AC2F729000CA80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C7D0922AC2F729000CA80D /* Assets.xcassets */; };
@@ -45,11 +45,11 @@
 		45124FCC2AC59A4400489A87 /* HeroTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTransformation.swift; sourceTree = "<group>"; };
 		45124FCE2AC5DBB300489A87 /* GetTransformationBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransformationBody.swift; sourceTree = "<group>"; };
 		45124FD02AC61B7200489A87 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
-		4545F0332AF7A8510080A012 /* TransformTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformTableViewController.swift; sourceTree = "<group>"; };
-		4545F0342AF7A8510080A012 /* TransformTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformTableViewController.xib; sourceTree = "<group>"; };
 		45A93BD02AC96BB800A054CC /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		45A93BD12AC96BB800A054CC /* ListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewController.xib; sourceTree = "<group>"; };
 		45A93BDA2AC9E37F00A054CC /* UrlToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlToImage.swift; sourceTree = "<group>"; };
+		45C4AE892AF9145B005F482B /* TransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
+		45C4AE8A2AF9145B005F482B /* TransformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TransformViewController.xib; path = ../Controllers/TransformViewController.xib; sourceTree = "<group>"; };
 		45C7D0862AC2F728000CA80D /* DBHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C7D0892AC2F728000CA80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C7D08B2AC2F728000CA80D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				45A93BD12AC96BB800A054CC /* ListTableViewController.xib */,
 				45DA0BF42AC9ECAD00B7882A /* ListTableViewCell.xib */,
 				45DA0BF82AC9F57F00B7882A /* InfoViewController.xib */,
-				4545F0342AF7A8510080A012 /* TransformTableViewController.xib */,
+				45C4AE8A2AF9145B005F482B /* TransformViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 				45A93BD02AC96BB800A054CC /* ListTableViewController.swift */,
 				45DA0BF32AC9ECAD00B7882A /* ListTableViewCell.swift */,
 				45DA0BF72AC9F57F00B7882A /* InfoViewController.swift */,
-				4545F0332AF7A8510080A012 /* TransformTableViewController.swift */,
+				45C4AE892AF9145B005F482B /* TransformViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,9 +249,9 @@
 			files = (
 				45A93BD32AC96BB800A054CC /* ListTableViewController.xib in Resources */,
 				45DA0BF62AC9ECAD00B7882A /* ListTableViewCell.xib in Resources */,
-				4545F0362AF7A8510080A012 /* TransformTableViewController.xib in Resources */,
 				45C7D0A62AC2F928000CA80D /* LoginViewController.xib in Resources */,
 				45C7D0962AC2F729000CA80D /* LaunchScreen.storyboard in Resources */,
+				45C4AE8C2AF9145B005F482B /* TransformViewController.xib in Resources */,
 				45C7D0932AC2F729000CA80D /* Assets.xcassets in Resources */,
 				45DA0BFA2AC9F57F00B7882A /* InfoViewController.xib in Resources */,
 			);
@@ -271,11 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C4AE8B2AF9145B005F482B /* TransformViewController.swift in Sources */,
 				45124FCD2AC59A4400489A87 /* HeroTransformation.swift in Sources */,
 				45C7D0B82AC35AA4000CA80D /* NetworkModel.swift in Sources */,
 				45C7D0A52AC2F928000CA80D /* LoginViewController.swift in Sources */,
 				45A93BD22AC96BB800A054CC /* ListTableViewController.swift in Sources */,
-				4545F0352AF7A8510080A012 /* TransformTableViewController.swift in Sources */,
 				45124FD12AC61B7200489A87 /* LocalDataModel.swift in Sources */,
 				45DA0BF52AC9ECAD00B7882A /* ListTableViewCell.swift in Sources */,
 				45124FCF2AC5DBB300489A87 /* GetTransformationBody.swift in Sources */,
